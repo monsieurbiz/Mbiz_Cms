@@ -21,11 +21,13 @@
             <mbiz_cms>
                 <class>Mbiz_Cms_Block</class>
             </mbiz_cms>
+            <!--
             <cms>
                 <rewrite>
                     <block>Mbiz_Cms_Block_Block</block>
                 </rewrite>
             </cms>
+            -->
         </blocks>
     </global>
 </config>

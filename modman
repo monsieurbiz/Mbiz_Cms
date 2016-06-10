@@ -1,3 +1,2 @@
-app/code/community/Mbiz/Cms/Block/Block.php app/code/community/Mbiz/Cms/Block/Block.php
-app/code/community/Mbiz/Cms/etc/config.xml  app/code/community/Mbiz/Cms/etc/config.xml
-app/etc/modules/Mbiz_Cms.xml                app/etc/modules/Mbiz_Cms.xml
+app/code/community/Mbiz/Cms app/code/community/Mbiz/Cms
+app/etc/modules/Mbiz_Cms.xml app/etc/modules/Mbiz_Cms.xml

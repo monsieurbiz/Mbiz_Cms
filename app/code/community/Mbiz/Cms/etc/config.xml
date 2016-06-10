@@ -14,6 +14,9 @@
     <modules>
         <Mbiz_Cms>
             <version>0.1.0</version>
+            <depends>
+                <Mage_Cms />
+            </depends>
         </Mbiz_Cms>
     </modules>
     <global>
@@ -21,13 +24,24 @@
             <mbiz_cms>
                 <class>Mbiz_Cms_Block</class>
             </mbiz_cms>
-            <!--
             <cms>
                 <rewrite>
                     <block>Mbiz_Cms_Block_Block</block>
                 </rewrite>
             </cms>
-            -->
         </blocks>
+        <models>
+            <mbiz_cms>
+                <class>Mbiz_Cms_Model</class>
+            </mbiz_cms>
+        </models>
+        <cms>
+            <block>
+                <tempate_filter>mbiz_cms/template_filter</tempate_filter>
+            </block>
+            <page>
+                <tempate_filter>mbiz_cms/template_filter</tempate_filter>
+            </page>
+        </cms>
     </global>
 </config>

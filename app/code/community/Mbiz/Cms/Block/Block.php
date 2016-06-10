@@ -34,7 +34,9 @@ class Mbiz_Cms_Block_Block extends Mage_Core_Block_Template
             'store'          => Mage::app()->getStore()->getId(),
             'design_package' => Mage::getDesign()->getPackageName(),
             'design_theme'   => Mage::getDesign()->getTheme('template'),
-            'template'       => $this->getTemplate()
+            'template'       => $this->getTemplate(),
+            'secure_url'     => Mage::app()->getRequest()->isSecure(),
+            'custom'         => $this->getCustomCacheKey(),
         );
     }
 
@@ -60,6 +62,9 @@ class Mbiz_Cms_Block_Block extends Mage_Core_Block_Template
      */
     public function getCacheLifetime()
     {
+        if ($this->getData('nocache')) {
+            return null;
+        }
         return 5 * 24 * 3600; // 5 days
     }
 
@@ -81,7 +86,6 @@ class Mbiz_Cms_Block_Block extends Mage_Core_Block_Template
 
     /**
      * Retrieve the block content as HTML
-     * @return string
      */
     public function getContentAsHtml()
     {

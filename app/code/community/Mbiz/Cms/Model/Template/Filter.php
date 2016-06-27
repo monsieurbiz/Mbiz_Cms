@@ -13,7 +13,7 @@
  * Template_Filter Model
  * @package Mbiz_Cms
  */
-class Mbiz_Cms_Model_Template_Filter extends Mage_Cms_Model_Template_Filter
+class Mbiz_Cms_Model_Template_Filter extends Mage_Widget_Model_Template_Filter
 {
 
 // Monsieur Biz Tag NEW_CONST
